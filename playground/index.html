@@ -146,6 +146,39 @@
 
         }
 
+        .signature-orbit-a {
+    animation: orbitFloatA 10s ease-in-out infinite;
+}
+
+.signature-orbit-b {
+    animation: orbitFloatB 13s ease-in-out infinite;
+}
+
+@keyframes orbitFloatA {
+    0%, 100% {
+        transform: rotate(-10deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-6deg) translate3d(8px, -4px, 0);
+    }
+}
+
+@keyframes orbitFloatB {
+    0%, 100% {
+        transform: rotate(16deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(12deg) translate3d(-7px, 5px, 0);
+    }
+}@media (prefers-reduced-motion: reduce) {
+    .signature-orbit-a,
+    .signature-orbit-b {
+        animation: none;
+    }
+}
+
 
     </style>
 
@@ -367,28 +400,19 @@
 
         <div class="glass signature-demo">
 
-            <div class="curiora-signature">
+    <div class="curiora-signature" id="curioraSignature">
 
-                <div
-                    class="signature-orbit
-                           signature-orbit-a"
-                ></div>
+    <div class="signature-orbit signature-orbit-a"></div>
 
-                <div
-                    class="signature-orbit
-                           signature-orbit-b"
-                ></div>
+    <div class="signature-orbit signature-orbit-b"></div>
 
-                <div class="signature-core">
+    <div class="signature-glass">
+        <span>
+            CURIO
+        </span>
+    </div>
 
-                    <span>
-                        CURIO
-                    </span>
-
-                </div>
-
-            </div>
-
+</div>
         </div>
 
     </section>
@@ -419,7 +443,7 @@
 
 
 </main>
-<script src="../js/signature.js"></script>
+<script src="/js/signature.js"></script>
 </body>
 
 </html>
