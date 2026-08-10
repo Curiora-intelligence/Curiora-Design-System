@@ -1,0 +1,122 @@
+/* ==========================================================
+   CURIORA DESIGN TOKENS
+   Curiosity Creates Intelligence.
+========================================================== */
+
+:root {
+
+    /* ======================================================
+       COLOR
+    ====================================================== */
+
+    --color-background: #F5F7FA;
+
+    --color-surface: rgba(255, 255, 255, 0.62);
+    --color-surface-hover: rgba(255, 255, 255, 0.78);
+
+    --color-text: #111827;
+    --color-text-secondary: #6B7280;
+    --color-text-tertiary: #9CA3AF;
+
+    /* Curiora blue */
+    --color-accent: #0071E3;
+
+    --color-success: #22C55E;
+    --color-warning: #F59E0B;
+    --color-danger: #EF4444;
+
+    --color-border: rgba(0, 0, 0, 0.08);
+
+
+    /* ======================================================
+       RADIUS
+    ====================================================== */
+
+    --radius-sm: 12px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
+    --radius-xl: 36px;
+    --radius-pill: 999px;
+
+
+    /* ======================================================
+       SHADOWS
+    ====================================================== */
+
+    --shadow-soft:
+        0 8px 30px rgba(0, 0, 0, 0.06);
+
+    --shadow-medium:
+        0 16px 50px rgba(0, 0, 0, 0.08);
+
+    --shadow-hover:
+        0 20px 60px rgba(0, 0, 0, 0.12);
+
+
+    /* ======================================================
+       GLASS
+    ====================================================== */
+
+    --glass-blur: 24px;
+    --glass-saturation: 180%;
+
+
+    /* ======================================================
+       SPACING
+    ====================================================== */
+
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 40px;
+    --space-6: 56px;
+    --space-7: 72px;
+    --space-8: 96px;
+    --space-9: 120px;
+    --space-10: 160px;
+
+
+    /* ======================================================
+       CONTENT WIDTH
+    ====================================================== */
+
+    --content-width: 1200px;
+    --content-wide: 1400px;
+
+
+    /* ======================================================
+       MOTION
+    ====================================================== */
+
+    --ease-standard: cubic-bezier(.22, .61, .36, 1);
+    --ease-smooth: cubic-bezier(.2, .8, .2, 1);
+
+    --duration-fast: 180ms;
+    --duration-normal: 300ms;
+    --duration-slow: 500ms;
+
+
+    /* ======================================================
+       TYPOGRAPHY
+    ====================================================== */
+
+    --font-sans:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "SF Pro Text",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+
+    --text-xs: 13px;
+    --text-sm: 15px;
+    --text-md: 18px;
+    --text-lg: 22px;
+
+    --heading-sm: 28px;
+    --heading-md: 40px;
+    --heading-lg: 52px;
+    --heading-xl: clamp(64px, 9vw, 128px);
+}

@@ -1,0 +1,30 @@
+.glass {
+    background: var(--color-surface);
+
+    backdrop-filter:
+        blur(var(--glass-blur))
+        saturate(var(--glass-saturation));
+
+    -webkit-backdrop-filter:
+        blur(var(--glass-blur))
+        saturate(var(--glass-saturation));
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-soft);
+}
+
+.glass-interactive {
+    transition:
+        transform var(--duration-normal) var(--ease-standard),
+        box-shadow var(--duration-normal) ease,
+        background var(--duration-normal) ease;
+}
+
+.glass-interactive:hover {
+    transform: translateY(-4px);
+    background: var(--color-surface-hover);
+    box-shadow: var(--shadow-hover);
+}

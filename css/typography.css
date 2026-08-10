@@ -1,0 +1,48 @@
+body {
+    font-family: var(--font-sans);
+}
+
+.eyebrow {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+}
+
+.heading-xl {
+    font-size: var(--heading-xl);
+    line-height: .91;
+    letter-spacing: -.065em;
+    font-weight: 700;
+}
+
+.heading-lg {
+    font-size: var(--heading-lg);
+    line-height: 1;
+    letter-spacing: -.045em;
+    font-weight: 600;
+}
+
+.heading-md {
+    font-size: var(--heading-md);
+    line-height: 1.05;
+    letter-spacing: -.04em;
+    font-weight: 600;
+}
+
+.body-large {
+    font-size: var(--text-lg);
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+}
+
+.body {
+    font-size: var(--text-md);
+    line-height: 1.6;
+}
+
+.caption {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+}
