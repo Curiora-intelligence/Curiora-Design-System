@@ -1,0 +1,84 @@
+/* ==========================================================
+   CURIORA SIGNATURE
+========================================================== */
+
+.curiora-signature {
+    position: relative;
+
+    width: 320px;
+    height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signature-core {
+    position: relative;
+    z-index: 2;
+
+    width: 170px;
+    height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 26px;
+
+    background:
+        rgba(255, 255, 255, .72);
+
+    backdrop-filter:
+        blur(var(--glass-blur))
+        saturate(var(--glass-saturation));
+
+    -webkit-backdrop-filter:
+        blur(var(--glass-blur))
+        saturate(var(--glass-saturation));
+
+    border:
+        1px solid
+        rgba(120, 170, 255, .22);
+
+    box-shadow:
+        var(--shadow-medium);
+
+    transform-style: preserve-3d;
+}
+
+.signature-core span {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .18em;
+
+    color: var(--color-text);
+
+    transform: translateZ(18px);
+}
+
+.signature-orbit {
+    position: absolute;
+
+    border:
+        1px solid
+        rgba(0, 113, 227, .20);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.signature-orbit-a {
+    width: 300px;
+    height: 95px;
+
+    transform: rotate(-10deg);
+}
+
+.signature-orbit-b {
+    width: 240px;
+    height: 145px;
+
+    transform: rotate(16deg);
+}
