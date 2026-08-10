@@ -12,6 +12,7 @@
 
     border: 0;
     border-radius: var(--radius-pill);
+    cursor: pointer;
 
     font-size: 15px;
     font-weight: 600;
@@ -50,4 +51,8 @@
 
 .button-secondary:hover {
     background: rgba(0, 113, 227, .05);
+}
+.button:focus-visible {
+    outline: 3px solid rgba(0, 113, 227, .25);
+    outline-offset: 3px;
 }

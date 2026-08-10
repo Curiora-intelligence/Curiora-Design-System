@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Curiora Design System</title>
+
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/glass.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+    <style>
+
+        .playground {
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 32px;
+        }
+
+        .playground-header {
+            margin-bottom: 100px;
+        }
+
+        .playground-section {
+            padding: 80px 0;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .playground-section h2 {
+            margin-bottom: 40px;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(160px, 1fr));
+
+            gap: 16px;
+        }
+
+        .color-card {
+            height: 120px;
+            padding: 20px;
+
+            border-radius: var(--radius-md);
+
+            display: flex;
+            align-items: flex-end;
+
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .color-background {
+            background: var(--color-background);
+            border: 1px solid var(--color-border);
+        }
+
+        .color-surface {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+        }
+
+        .color-accent {
+            background: var(--color-accent);
+            color: white;
+        }
+
+        .color-success {
+            background: var(--color-success);
+            color: white;
+        }
+
+        .color-warning {
+            background: var(--color-warning);
+            color: white;
+        }
+
+        .color-danger {
+            background: var(--color-danger);
+            color: white;
+        }
+
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .glass-demo {
+            max-width: 500px;
+            padding: 48px;
+        }
+
+        .nav-demo {
+            padding: 18px 24px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            border-radius: var(--radius-pill);
+        }
+
+        .nav-demo-links {
+            display: flex;
+            gap: 28px;
+
+            color: var(--color-text-secondary);
+            font-size: 14px;
+        }
+
+        .signature-demo {
+            min-height: 300px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .signature {
+            position: relative;
+
+            width: 320px;
+            height: 180px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .signature-core {
+            position: relative;
+            z-index: 2;
+
+            width: 170px;
+            height: 82px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 26px;
+
+            background:
+                rgba(255, 255, 255, .72);
+
+            backdrop-filter:
+                blur(28px)
+                saturate(180%);
+
+            -webkit-backdrop-filter:
+                blur(28px)
+                saturate(180%);
+
+            border:
+                1px solid
+                rgba(120, 170, 255, .22);
+
+            box-shadow:
+                var(--shadow-medium);
+        }
+
+        .signature-core span {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .18em;
+        }
+
+        .signature-orbit {
+            position: absolute;
+
+            border:
+                1px solid
+                rgba(0, 113, 227, .20);
+
+            border-radius: 50%;
+        }
+
+        .signature-orbit-a {
+            width: 300px;
+            height: 95px;
+
+            transform: rotate(-10deg);
+        }
+
+        .signature-orbit-b {
+            width: 240px;
+            height: 145px;
+
+            transform: rotate(16deg);
+        }
+
+        @media (max-width: 700px) {
+
+            .playground {
+                padding: 60px 20px;
+            }
+
+            .playground-section {
+                padding: 60px 0;
+            }
+
+            .nav-demo-links {
+                display: none;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<main class="playground">
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="playground-header">
+
+        <div class="eyebrow">
+            Curiora Design System
+        </div>
+
+        <h1 class="heading-xl">
+            Curiosity Creates
+            Intelligence.
+        </h1>
+
+        <p class="body-large">
+            The visual language behind the Curiora ecosystem.
+        </p>
+
+    </header>
+
+
+    <!-- =========================================
+         TYPOGRAPHY
+    ========================================== -->
+
+    <section class="playground-section">
+
+        <h2 class="heading-lg">
+            Typography
+        </h2>
+
+        <p class="heading-xl">
+            Intelligence.
+        </p>
+
+        <p class="heading-lg">
+            Built for what comes next.
+        </p>
+
+        <p class="heading-md">
+            Intelligent systems for the real world.
+        </p>
+
+        <p class="body-large">
+            Curiora builds intelligent systems that turn
+            curiosity into meaningful possibilities.
+        </p>
+
+        <p class="caption">
+            Secondary information and supporting text.
+        </p>
+
+    </section>
+
+
+    <!-- =========================================
+         COLORS
+    ========================================== -->
+
+    <section class="playground-section">
+
+        <h2 class="heading-lg">
+            Color
+        </h2>
+
+        <div class="color-grid">
+
+            <div class="color-card color-background">
+                Background
+            </div>
+
+            <div class="color-card color-surface">
+                Surface
+            </div>
+
+            <div class="color-card color-accent">
+                Curiora Blue
+            </div>
+
+            <div class="color-card color-success">
+                Success
+            </div>
+
+            <div class="color-card color-warning">
+                Warning
+            </div>
+
+            <div class="color-card color-danger">
+                Danger
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         BUTTONS
+    ========================================== -->
+
+    <section class="playground-section">
+
+        <h2 class="heading-lg">
+            Buttons
+        </h2>
+
+        <div class="button-row">
+
+            <a
+                href="#"
+                class="button button-primary"
+            >
+                Explore
+            </a>
+
+            <a
+                href="#"
+                class="button button-secondary"
+            >
+                Research →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         GLASS
+    ========================================== -->
+
+    <section class="playground-section">
+
+        <h2 class="heading-lg">
+            Liquid Glass
+        </h2>
+
+        <div class="glass glass-demo">
+
+            <div class="eyebrow">
+                Curiora Surface
+            </div>
+
+            <h3 class="heading-md">
+                Intelligence,
+                beautifully contained.
+            </h3>
+
+            <p class="body">
+                Glass is used deliberately for
+                navigation, floating surfaces,
+                and interactive elements.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <section class="playground-section">
+
+        <h2 class="heading-lg">
+            Navigation
+        </h2>
+
+        <nav class="glass nav-demo">
+
+            <strong>
+                CURIORA
+            </strong>
+
+            <div class="nav-demo-links">
+
+                <span>Products</span>
+                <span>Research</span>
+                <span>About</span>
+
+            </div>
+
+            <a
+                href="#"
+                class="button button-primary"
+            >
+                Explore
+            </a>
+
+        </nav>
+
+    </section>
+
+
+    <!-- =========================================
+         CURIORA SIGNATURE
+    ========================================== -->
+
+    <section class="playground-section">
+
+        <h2 class="heading-lg">
+            Curiora Signature
+        </h2>
+
+        <div class="glass signature-demo">
+
+            <div class="signature">
+
+                <div
+                    class="signature-orbit
+                           signature-orbit-a"
+                ></div>
+
+                <div
+                    class="signature-orbit
+                           signature-orbit-b"
+                ></div>
+
+                <div class="signature-core">
+
+                    <span>
+                        CURIO
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         MOTION
+    ========================================== -->
+
+    <section class="playground-section">
+
+        <h2 class="heading-lg">
+            Motion
+        </h2>
+
+        <p class="body-large">
+            Curiora motion should feel calm,
+            physical, and intentional.
+        </p>
+
+        <div class="glass glass-demo">
+
+            Hover over this surface.
+
+        </div>
+
+    </section>
+
+
+</main>
+
+</body>
+
+</html>
